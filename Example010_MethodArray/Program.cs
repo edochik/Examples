@@ -1,20 +1,18 @@
 ﻿//поиск индекса
-int [] array = { 15, 22, 34, 4, 52, 64, 4, 628, 92};
+int[] array = { 1, 2, 4, 5, 4, 7, 18, 9, };
 
-int n = array.Length;
+int n = array.Length;// длина или кол-во массива
 int find = 4;
 
-int index =0;
+int index = 0;
 
-while(index < n)
+while (index < n)
 {
-   if(array[index] == find)
-   {
-       Console.WriteLine(index);
-       break; // если несколько элементов в массиве одинаковых, находит первый индекс элемента и заканчивает операцию
-   }
-   //index = index + 1;
+    if (array[index] == find)
+    {
+
+        Console.WriteLine(index);
+
+    }
     index++;
-
-
 }
