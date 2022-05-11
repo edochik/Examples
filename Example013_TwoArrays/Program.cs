@@ -43,7 +43,7 @@ PrintArray(matrix);
 FillArray(matrix);
 Console.WriteLine();
 PrintArray(matrix);
-
+*/
 int[,] pic = new int[,]
 {
  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -99,7 +99,7 @@ PrintImage(pic);
 FillImage(13, 13);
 PrintImage(pic);
 
-double Factorial(int n)
+double Factorial(int n) // рекурсия факториала
 {
     if (n == 1) return 1; //1! = 1;
     else return n * Factorial(n - 1);
@@ -109,12 +109,13 @@ for (int i = 1; i < 40; i++)
 {
     Console.WriteLine($"{i}! = {Factorial(i)}");
 }
-*/
+
+/*
 // f(1) = 1
 // f(2) = 1
 // f(n) = f(n-1)+f(n-2)
 
-double Fibonacci(int n)
+double Fibonacci(int n) // рекурсия числа фибоначи
 {
     if (n == 1 || n == 2) return 1;
     else return Fibonacci(n - 1) + Fibonacci(n - 2);
@@ -124,6 +125,9 @@ for (int i = 1; i < 50; i++)
 {
     Console.WriteLine($"f({i})= {Fibonacci(i)}");
 }
+*/
+
+
 
 //тетрис
 
