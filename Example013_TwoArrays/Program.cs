@@ -14,6 +14,7 @@ for (int rows = 0; rows < 2; rows++)
     }
 }
 */
+
 /*
 void PrintArray(int[,] matr)
 {
@@ -44,6 +45,7 @@ FillArray(matrix);
 Console.WriteLine();
 PrintArray(matrix);
 */
+/*
 int[,] pic = new int[,]
 {
  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -75,7 +77,7 @@ void PrintImage(int[,] image)
 {
     for (int i = 0; i < image.GetLength(0); i++)
     {
-        for (int j = 0; j < image.GetLength(0); j++)
+        for (int j = 0; j < image.GetLength(1); j++)
         {
             if (image[i, j] == 0) Console.Write($" ");
             else Console.Write($"+");
@@ -96,16 +98,17 @@ void FillImage(int row, int col)
     }
 }
 PrintImage(pic);
-FillImage(13, 13);
+FillImage(13, 13); //это случайная точка которая находится 13 ячейке(13 строчка 13)
 PrintImage(pic);
+*/
 
-double Factorial(int n) // рекурсия факториала
+double Factorial(int n) // рекурсия факториала 
 {
     if (n == 1) return 1; //1! = 1;
     else return n * Factorial(n - 1);
-}
+}   
 
-for (int i = 1; i < 40; i++)
+for (int i = 1; i < 40; i++) // если i = 0, то условия не саблюдаются в Factorial, уходит сама в себя
 {
     Console.WriteLine($"{i}! = {Factorial(i)}");
 }
